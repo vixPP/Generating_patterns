@@ -76,12 +76,7 @@ public:
 			query += columns + " ";
 		}
 		query += "FROM ";
-		if (fromTable.empty()) 
-		{
-			
-			return "Error: FROM clause is missing;";
-		}
-		query += fromTable + " ";
+	
 		if (!whereClause.empty()) 
 		{
 			query += "WHERE " + whereClause + " ";
